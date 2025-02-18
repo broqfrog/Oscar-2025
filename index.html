@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prêmios de Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha seus favoritos</h1>
+        
+        <!-- Movie Selection List -->
+        <form id="awardsForm">
+            <fieldset>
+                <legend>Selecione pelo menos um filme:</legend>
+                <ul class="movie-list">
+                    <li><input type="checkbox" name="movies" value="Anora"> Anora</li>
+                    <li><input type="checkbox" name="movies" value="O Brutalista"> O Brutalista</li>
+                    <li><input type="checkbox" name="movies" value="Um Completo Desconhecido"> Um Completo Desconhecido</li>
+                    <li><input type="checkbox" name="movies" value="Conclave"> Conclave</li>
+                    <li><input type="checkbox" name="movies" value="Duna: Parte II"> Duna: Parte II</li>
+                    <li><input type="checkbox" name="movies" value="Emilia Pérez"> Emilia Pérez</li>
+                    <li><input type="checkbox" name="movies" value="Ainda Estou Aqui"> Ainda Estou Aqui</li>
+                    <li><input type="checkbox" name="movies" value="Nickel Boys"> Nickel Boys</li>
+                    <li><input type="checkbox" name="movies" value="A Substância"> A Substância</li>
+                    <li><input type="checkbox" name="movies" value="Wicked"> Wicked</li>
+                    <li><input type="checkbox" name="movies" value="Flow"> Flow</li>
+                    <li><input type="checkbox" name="movies" value="Divertida Mente 2"> Divertida Mente 2</li>
+                    <li><input type="checkbox" name="movies" value="Memórias de um Caracol"> Memórias de um Caracol</li>
+                    <li><input type="checkbox" name="movies" value="Wallace & Gromit: Vingança das Aves"> Wallace & Gromit: Vingança das Aves</li>
+                    <li><input type="checkbox" name="movies" value="Robô Selvagem"> Robô Selvagem</li>
+                    <li><input type="checkbox" name="movies" value="Sing Sing"> Sing Sing</li>
+                    <li><input type="checkbox" name="movies" value="A Garota da Agulha"> A Garota da Agulha</li>
+                    <li><input type="checkbox" name="movies" value="A Semente do Fruto Sagrado"> A Semente do Fruto Sagrado</li>
+                    <li><input type="checkbox" name="movies" value="O Aprendiz"> O Aprendiz</li>
+                </ul>
+            </fieldset>
+
+            <!-- Dropdown Menus -->
+            <fieldset>
+                <legend>Escolha os vencedores:</legend>
+
+                <label for="best-picture">Melhor Filme:</label>
+                <select id="best-picture">
+                    <option value="">-- Escolha --</option>
+                    <option>Anora</option>
+                    <option>O Brutalista</option>
+                    <option>Um Completo Desconhecido</option>
+                    <option>Conclave</option>
+                    <option>Duna: Parte II</option>
+                    <option>Emilia Pérez</option>
+                    <option>Ainda Estou Aqui</option>
+                    <option>Nickel Boys</option>
+                    <option>A Substância</option>
+                    <option>Wicked</option>
+                </select>
+
+                <label for="best-international">Melhor Filme Internacional:</label>
+                <select id="best-international">
+                    <option value="">-- Escolha --</option>
+                    <option>Ainda Estou Aqui (Brasil)</option>
+                    <option>Emilia Pérez (França)</option>
+                    <option>Flow (Letônia)</option>
+                    <option>A Garota da Agulha (Dinamarca)</option>
+                    <option>A Semente do Fruto Sagrado (Alemanha)</option>
+                </select>
+
+                <label for="best-animation">Melhor Animação:</label>
+                <select id="best-animation">
+                    <option value="">-- Escolha --</option>
+                    <option>Flow</option>
+                    <option>Divertida Mente 2</option>
+                    <option>Memórias de um Caracol</option>
+                    <option>Wallace & Gromit: Vingança das Aves</option>
+                    <option>Robô Selvagem</option>
+                </select>
+
+                <label for="best-director">Melhor Diretor:</label>
+                <select id="best-director">
+                    <option value="">-- Escolha --</option>
+                    <option>Sean Baker, Anora</option>
+                    <option>Brady Corbet, O Brutalista</option>
+                    <option>James Mangold, Um Completo Desconhecido</option>
+                    <option>Jacques Audiard, Emilia Pérez</option>
+                    <option>Coralie Fargeat, A Substância</option>
+                </select>
+
+                <label for="best-actress">Melhor Atriz:</label>
+                <select id="best-actress">
+                    <option value="">-- Escolha --</option>
+                    <option>Fernanda Torres, Ainda Estou Aqui</option>
+                    <option>Cynthia Erivo, Wicked</option>
+                    <option>Karla Sofía Gascón, Emilia Pérez</option>
+                    <option>Mikey Madison, Anora</option>
+                    <option>Demi Moore, A Substância</option>
+                </select>
+
+                <label for="best-actor">Melhor Ator:</label>
+                <select id="best-actor">
+                    <option value="">-- Escolha --</option>
+                    <option>Adrien Brody, O Brutalista</option>
+                    <option>Timothée Chalamet, Um Completo Desconhecido</option>
+                    <option>Colman Domingo, Sing Sing</option>
+                    <option>Ralph Fiennes, Conclave</option>
+                    <option>Sebastian Stan, O Aprendiz</option>
+                </select>
+            </fieldset>
+
+            <button type="submit">Enviar Votos</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
